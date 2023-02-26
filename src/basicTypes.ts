@@ -36,16 +36,7 @@ export const objectTypeExample = () => {
     }
 }
 
-// Custom Array and Tuple Types
-type MyArrayType = string[];
-type MyTupleType = [string, number];
 
-// Custom Enum Type
-enum MyEnumType {
-  FirstItem = 'First',
-  SecondItem = 'Second',
-  ThirdItem = 'Third'
-}
 
 
 
@@ -67,10 +58,7 @@ export const arrayTypesExample = () => {
 }
 
 
-// Custom Union and Literal Types
-type MyUnionType = string | number;
-type MyLiteralType = 'Hello' | 'World' | 42;
-const myLiteralValue = 'Hello' as const;
+
 
 export const unionTypeExample = () => {
     return {
@@ -84,7 +72,7 @@ export const unionTypeExample = () => {
     }
 }
 
-type MyFunctionType = (arg1: string, arg2: number) => boolean;
+
 
 
 
@@ -176,5 +164,53 @@ console.log(combine2('25', '3.5', 'as-text'))
 
 
 
+type MyNumberType = number;
+type MyBooleanType = boolean;
+type MyStringType = string;
+type MyArrayType = string[];
+type MyTupleType = [string, number];
+enum MyEnumType {
+  One,
+  Two,
+  Three,
+}
+type MyUnionType = string | number;
+type MyLiteralType = 'Hello' | 'World' | 42;
+const myLiteralValue = 'Hello' as const;
+type MyFunctionType = (arg1: string, arg2: number) => boolean;
+
+const myNumber: MyNumberType = 42;
+const myBoolean: MyBooleanType = false;
+const myString: MyStringType = 'Hello World';
+const myArray: MyArrayType = ['apple', 'banana', 'orange'];
+const myTuple: MyTupleType = ['Hello', 42];
+const myEnum: MyEnumType = MyEnumType.One;
+const myUnion: MyUnionType = 'Hello';
+const myLiteral: MyLiteralType = 'Hello';
+const myFunction: MyFunctionType = (arg1: string, arg2: number) => {
+  return arg1.length === arg2;
+};
+
+export {
+  MyNumberType,
+  MyBooleanType,
+  MyStringType,
+  MyArrayType,
+  MyTupleType,
+  MyEnumType,
+  MyUnionType,
+  MyLiteralType,
+  myLiteralValue,
+  MyFunctionType,
+  myNumber,
+  myBoolean,
+  myString,
+  myArray,
+  myTuple,
+  myEnum,
+  myUnion,
+  myLiteral,
+  myFunction,
+};
 
 
