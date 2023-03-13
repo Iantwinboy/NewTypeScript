@@ -1,6 +1,6 @@
 
 
-import { Person } from "./data/person";
+
 
 
 import { functionParamsExample, objectTypeExample, arrayTypesExample, unionTypeExample, funcTypeExample } from "./basicTypes"
