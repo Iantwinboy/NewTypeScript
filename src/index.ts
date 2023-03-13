@@ -1,3 +1,4 @@
+
 import { functionParamsExample, objectTypeExample, arrayTypesExample, unionTypeExample, funcTypeExample } from "./basicTypes"
 
 const funcParamsButton = document.querySelector('#funcParams')!
